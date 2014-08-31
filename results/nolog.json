@@ -1,0 +1,80 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "functionName"
+          },
+          "init": {
+            "type": "FunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "arg1"
+              },
+              {
+                "type": "Identifier",
+                "name": "arg2"
+              }
+            ],
+            "defaults": [],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ReturnStatement",
+                  "argument": {
+                    "type": "BinaryExpression",
+                    "operator": "+",
+                    "left": {
+                      "type": "Literal",
+                      "value": "arg1",
+                      "raw": "'arg1'"
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "arg2",
+                      "raw": "'arg2'"
+                    }
+                  }
+                }
+              ]
+            },
+            "rest": null,
+            "generator": false,
+            "expression": false
+          }
+        }
+      ],
+      "kind": "var"
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "functionName"
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "1",
+            "raw": "'1'"
+          },
+          {
+            "type": "Literal",
+            "value": "2",
+            "raw": "'2'"
+          }
+        ]
+      }
+    }
+  ]
+}
